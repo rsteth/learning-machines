@@ -1,0 +1,261 @@
+{
+  "pipeline": "longbook_next",
+  "source_model": "Qwen/Qwen3.8-27B",
+  "warm_start": "summerMC/Qwen3.8-27B-Longbook27-VL-GDN64",
+  "architecture": "64x native Qwen3.5 GatedDeltaNet (all-GDN)",
+  "converted_layers": [
+    3,
+    7,
+    11,
+    15,
+    19,
+    23,
+    27,
+    31,
+    35,
+    39,
+    43,
+    47,
+    51,
+    55,
+    59,
+    63
+  ],
+  "stage_a": {
+    "3": {
+      "init_choice": "warm",
+      "init_losses": {
+        "donor": 2.448410391807556,
+        "mapped": 1.0758955478668213,
+        "warm": 0.5569170415401459
+      },
+      "steps": 300,
+      "final_loss_ema": 0.004273472666240208
+    },
+    "7": {
+      "init_choice": "mapped",
+      "init_losses": {
+        "donor": 2.927011013031006,
+        "mapped": 1.0910983085632324,
+        "warm": 1.106826663017273
+      },
+      "steps": 300,
+      "final_loss_ema": 0.06567064509335364
+    },
+    "11": {
+      "init_choice": "warm",
+      "init_losses": {
+        "donor": 1.1532010436058044,
+        "mapped": 1.0604755282402039,
+        "warm": 0.6687441766262054
+      },
+      "steps": 300,
+      "final_loss_ema": 0.05060091499825794
+    },
+    "15": {
+      "init_choice": "mapped",
+      "init_losses": {
+        "donor": 1.865398347377777,
+        "mapped": 1.1382002234458923,
+        "warm": 1.2106755375862122
+      },
+      "steps": 300,
+      "final_loss_ema": 0.1252834988708956
+    },
+    "19": {
+      "init_choice": "mapped",
+      "init_losses": {
+        "donor": 2.0397757291793823,
+        "mapped": 1.1756171584129333,
+        "warm": 1.5529102683067322
+      },
+      "steps": 300,
+      "final_loss_ema": 0.12521364477207425
+    },
+    "23": {
+      "init_choice": "mapped",
+      "init_losses": {
+        "donor": 3.0360352993011475,
+        "mapped": 1.239289104938507,
+        "warm": 2.276898682117462
+      },
+      "steps": 300,
+      "final_loss_ema": 0.14239470081749142
+    },
+    "27": {
+      "init_choice": "mapped",
+      "init_losses": {
+        "donor": 1.5930196642875671,
+        "mapped": 1.1387015581130981,
+        "warm": 1.2707298398017883
+      },
+      "steps": 300,
+      "final_loss_ema": 0.236961375451627
+    },
+    "31": {
+      "init_choice": "mapped",
+      "init_losses": {
+        "donor": 1.924216866493225,
+        "mapped": 1.1866093873977661,
+        "warm": 1.4650160670280457
+      },
+      "steps": 300,
+      "final_loss_ema": 0.2230279554405097
+    },
+    "35": {
+      "init_choice": "mapped",
+      "init_losses": {
+        "donor": 1.7027969360351562,
+        "mapped": 1.1838499903678894,
+        "warm": 1.3467658758163452
+      },
+      "steps": 300,
+      "final_loss_ema": 0.15229067753953449
+    },
+    "39": {
+      "init_choice": "warm",
+      "init_losses": {
+        "donor": 1.4917969107627869,
+        "mapped": 1.2582667469978333,
+        "warm": 1.2537781596183777
+      },
+      "steps": 300,
+      "final_loss_ema": 0.24401856725396073
+    },
+    "43": {
+      "init_choice": "mapped",
+      "init_losses": {
+        "donor": 1.4737475514411926,
+        "mapped": 1.1558687686920166,
+        "warm": 1.1562909483909607
+      },
+      "steps": 300,
+      "final_loss_ema": 0.17044088516936232
+    },
+    "47": {
+      "init_choice": "mapped",
+      "init_losses": {
+        "donor": 1.6686099767684937,
+        "mapped": 1.161309540271759,
+        "warm": 1.269299328327179
+      },
+      "steps": 300,
+      "final_loss_ema": 0.143936336419821
+    },
+    "51": {
+      "init_choice": "mapped",
+      "init_losses": {
+        "donor": 1.3981122970581055,
+        "mapped": 1.1435856223106384,
+        "warm": 1.1592944860458374
+      },
+      "steps": 300,
+      "final_loss_ema": 0.11426197397405488
+    },
+    "55": {
+      "init_choice": "warm",
+      "init_losses": {
+        "donor": 1.2222390174865723,
+        "mapped": 2.340114653110504,
+        "warm": 1.061138242483139
+      },
+      "steps": 300,
+      "final_loss_ema": 0.09012715997186692
+    },
+    "59": {
+      "init_choice": "warm",
+      "init_losses": {
+        "donor": 1.1709195375442505,
+        "mapped": 2.0897938013076782,
+        "warm": 1.0685967206954956
+      },
+      "steps": 300,
+      "final_loss_ema": 0.051759563947468126
+    },
+    "63": {
+      "init_choice": "warm",
+      "init_losses": {
+        "donor": 1.112437129020691,
+        "mapped": 1.2014678120613098,
+        "warm": 0.8982209861278534
+      },
+      "steps": 300,
+      "final_loss_ema": 0.05200152779197328
+    }
+  },
+  "stage_b": {
+    "mode": "lora",
+    "steps": 800,
+    "lora_rank": 32,
+    "native_lora": true
+  },
+  "val": {
+    "kl": 0.20682777162041371,
+    "student_ppl": 9.843899402204555,
+    "teacher_ppl": 8.573157331022115,
+    "ppl_ratio": 1.14822334667582,
+    "tokens": 28664
+  },
+  "needle": [],
+  "config": {
+    "model": "Qwen/Qwen3.8-27B",
+    "warm_start": "summerMC/Qwen3.8-27B-Longbook27-VL-GDN64",
+    "work_dir": "/content/longbook_next/work",
+    "out_dir": "/content/longbook_next/longbook27_next_v2",
+    "data": [
+      "hf:wikimedia/wikipedia:20231101.ja:train:text",
+      "hf:wikimedia/wikipedia:20231101.en:train:text"
+    ],
+    "max_docs": 6000,
+    "synthetic_frac": 0.1,
+    "dtype": "bf16",
+    "seed": 1234,
+    "use_kernels": false,
+    "a_steps": 300,
+    "a_seq_start": 1024,
+    "a_seq_end": 4096,
+    "a_lr": 0.0002,
+    "a_cos_weight": 0.1,
+    "a_group_size": 8,
+    "a_init": "auto",
+    "a_calib_batches": 2,
+    "cache_plan": [
+      [
+        2048,
+        192
+      ],
+      [
+        4096,
+        96
+      ],
+      [
+        8192,
+        48
+      ],
+      [
+        16384,
+        16
+      ]
+    ],
+    "topk": 32,
+    "cache_shard": 8,
+    "cache_chunk": 1024,
+    "val_shard_every": 10,
+    "b_steps": 800,
+    "b_accum": 2,
+    "b_lr": 0.0001,
+    "b_min_lr_frac": 0.1,
+    "b_warmup": 20,
+    "converted_mode": "lora",
+    "lora_rank": 32,
+    "lora_alpha": 64.0,
+    "native_lora": true,
+    "curriculum": true,
+    "save_every": 50,
+    "val_every": 100,
+    "val_seqs": 8,
+    "needle_lengths": [],
+    "needle_trials": 4,
+    "eval_chunk": 8192
+  }
+}

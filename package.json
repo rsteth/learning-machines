@@ -1,0 +1,9 @@
+{
+  "name": "learning-machines",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "experiment": "node experiments/attention-memory/run.mjs"
+  }
+}
