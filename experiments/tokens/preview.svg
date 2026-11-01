@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 350" role="img" aria-labelledby="title desc">
+<title id="title">What is a token?</title><desc id="desc">Five schematic stages: text pieces, numbers, context, a next-piece distribution, then append and repeat. No live model.</desc>
+<rect width="960" height="350" fill="#f6f3eb"/>
+<g fill="#302e28" font-family="system-ui,sans-serif"><text x="40" y="48" font-size="14">01 / TOKENS</text><text x="40" y="94" font-size="32">What is a token?</text></g>
+<g stroke="#302e28" stroke-width="1.5" stroke-linejoin="round">
+<g fill="#c0c7ac"><path d="M60 164l42-21 42 21-42 21z"/><path fill="#7f8b6e" d="M60 164v12l42 21v-12z"/><path fill="#66745f" d="M102 185l42-21v12l-42 21z"/></g>
+<g transform="translate(174 0)" fill="#c0c7ac"><path d="M60 164l42-21 42 21-42 21z"/><path fill="#7f8b6e" d="M60 164v28l42 21v-28z"/><path fill="#66745f" d="M102 185l42-21v28l-42 21z"/></g>
+<g transform="translate(348 0)" fill="#c0c7ac"><path d="M60 164l42-21 42 21-42 21z"/><path fill="#7f8b6e" d="M60 164v38l42 21v-38z"/><path fill="#66745f" d="M102 185l42-21v38l-42 21z"/><path fill="none" d="M60 177l42 21 42-21M60 189l42 21 42-21"/></g>
+<g transform="translate(522 0)"><path fill="#db9672" d="M60 164l42-21 42 21-42 21z"/><path fill="#b16c4f" d="M60 164v45l42 21v-45z"/><path fill="#874d3a" d="M102 185l42-21v45l-42 21z"/></g>
+<g transform="translate(696 0)"><path fill="#db9672" d="M60 164l42-21 42 21-42 21z"/><path fill="#b16c4f" d="M60 164v12l42 21v-12z"/><path fill="#874d3a" d="M102 185l42-21v12l-42 21z"/></g>
+</g>
+<g fill="#302e28" font-family="system-ui,sans-serif" font-size="17" text-anchor="middle"><text x="102" y="263">Pieces</text><text x="276" y="263">Numbers</text><text x="450" y="263">Context</text><text x="624" y="263">Selection</text><text x="798" y="263">Repeat</text></g>
+<text x="40" y="322" fill="#6b695f" font-family="system-ui,sans-serif" font-size="14">Real tokenizer examples · synthetic representations and probabilities · no live model</text>
+</svg>

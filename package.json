@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "test": "node --test",
-    "experiment": "node experiments/attention-memory/run.mjs"
+    "experiment": "node experiments/attention-memory/run.mjs",
+    "experiment:tokens": "node experiments/tokens/run.mjs"
   },
   "license": "MIT"
 }
