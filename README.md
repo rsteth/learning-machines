@@ -16,3 +16,7 @@ npm run experiment
 This first entry is a teaching illustration, not an actual model experiment or benchmark. Future measured experiments should include their dataset, seed, environment and results, and be labelled separately.
 
 Each experiment gets its own folder, runnable entry point, assumptions, sources and tests. No shared framework is required.
+
+## License
+
+Original mechanics, tests, synthetic fixtures and documentation are [MIT licensed](LICENSE). The three copied upstream JSON snapshots retain Apache-2.0 licensing and are explicitly excluded from MIT; see [third-party notices](THIRD_PARTY_NOTICES.md) for attribution, license texts and provenance.

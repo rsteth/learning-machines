@@ -5,15 +5,24 @@
   "files": {
     "qwen-config.json": {
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/config.json",
-      "sha256": "191e0af232104ed8b65258cf3fb2b842e288008baca7633c11b82a1ac7203aab"
+      "sha256": "191e0af232104ed8b65258cf3fb2b842e288008baca7633c11b82a1ac7203aab",
+      "license": "Apache-2.0",
+      "attribution": "Qwen; Copyright 2026 Alibaba Cloud",
+      "license_url": "https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/LICENSE"
     },
     "longbook-config.json": {
       "url": "https://huggingface.co/summerAIO/Qwen3.8-27B-Longbook27-v2/blob/46319430c16af66860b20f14986ad1032e991796/config.json",
-      "sha256": "38b14865991300cd905baadc3313a58af1f72a2c1c2416f1b939c040abfdadad"
+      "sha256": "38b14865991300cd905baadc3313a58af1f72a2c1c2416f1b939c040abfdadad",
+      "license": "Apache-2.0",
+      "attribution": "summerAIO, derived from Qwen/Qwen3.8-27B",
+      "license_url": "https://huggingface.co/summerAIO/Qwen3.8-27B-Longbook27-v2/blob/46319430c16af66860b20f14986ad1032e991796/README.md"
     },
     "longbook-report.json": {
       "url": "https://huggingface.co/summerAIO/Qwen3.8-27B-Longbook27-v2/blob/46319430c16af66860b20f14986ad1032e991796/longbook_next_report.json",
-      "sha256": "153b02c53827f72b2b61fe2fa20a2e34ffedb8c4bebe7941edac8dac635aaaaa"
+      "sha256": "153b02c53827f72b2b61fe2fa20a2e34ffedb8c4bebe7941edac8dac635aaaaa",
+      "license": "Apache-2.0",
+      "attribution": "summerAIO, derived from Qwen/Qwen3.8-27B",
+      "license_url": "https://huggingface.co/summerAIO/Qwen3.8-27B-Longbook27-v2/blob/46319430c16af66860b20f14986ad1032e991796/README.md"
     }
   }
 }

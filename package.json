@@ -5,5 +5,6 @@
   "scripts": {
     "test": "node --test",
     "experiment": "node experiments/attention-memory/run.mjs"
-  }
+  },
+  "license": "MIT"
 }

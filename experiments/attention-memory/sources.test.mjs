@@ -4,6 +4,7 @@ import {readFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 const load = name => JSON.parse(readFileSync(new URL('./sources/'+name,import.meta.url)));
 test('source snapshots match hashes and architecture',()=>{
+ for(const meta of Object.values(load('provenance.json').files)) {assert.equal(meta.license,'Apache-2.0');assert.ok(meta.license_url.startsWith('https://huggingface.co/'));}
  for(const [name, meta] of Object.entries(load('provenance.json').files)) assert.equal(createHash('sha256').update(readFileSync(new URL('./sources/'+name,import.meta.url))).digest('hex'),meta.sha256);
  const base=load('qwen-config.json').text_config, converted=load('longbook-config.json'), report=load('longbook-report.json');
  assert.equal(base.num_hidden_layers,64);assert.equal(base.layer_types.filter(x=>x==='full_attention').length,16);
