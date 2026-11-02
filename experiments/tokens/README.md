@@ -13,8 +13,12 @@ Node.js 18+, no dependencies, network requests or model weights:
 ```sh
 node experiments/tokens/run.mjs
 node experiments/tokens/run.mjs --sample
-node --test experiments/tokens/mechanics.test.mjs
+node experiments/tokens/run.mjs --sample --seed 600     # any uint32 seed; prints each draw
+node experiments/tokens/run.mjs --seed 600 --draws 500  # 500 chained draws, counted
+node --test experiments/tokens/
 ```
+
+`--seed` and `--draws` reproduce the companion page's sampling playground exactly: the same seed gives the same draw (`selection.seed / 2^32`), and `--draws` chains each draw's returned seed into the next, as "Draw 100 in a row" does.
 
 ## What is real?
 
