@@ -7,12 +7,15 @@ Small, self-contained experiments for understanding machine learning. Mechanics 
 1. [What is a token?](experiments/tokens/README.md) — text, token IDs, representations and the next piece.
 2. [Attention and memory](experiments/attention-memory/README.md) — how much does a model need to keep?
 
+3. [How many dimensions does a movement need?](experiments/manifolds/README.md) — rigid bimanual constraints, cost fields and a fitted skill representation.
+
 Requires Node.js 18 or newer, no dependencies or model downloads.
 
 ```sh
 npm test
 npm run experiment:tokens
 npm run experiment
+npm run experiment:manifolds
 ```
 
 These entries are teaching illustrations, not actual model experiments or benchmarks. The token study includes verified tokenizer examples; its vectors and probabilities are synthetic. Future measured experiments should include their dataset, seed, environment and results, and be labelled separately.
