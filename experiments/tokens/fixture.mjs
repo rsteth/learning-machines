@@ -111,6 +111,42 @@ export const FIXTURE = {
         "arian",
         "ism"
       ]
+    },
+    {
+      "text": " king",
+      "ids": [
+        11734
+      ],
+      "pieces": [
+        " king"
+      ]
+    },
+    {
+      "text": " slept",
+      "ids": [
+        46498
+      ],
+      "pieces": [
+        " slept"
+      ]
+    },
+    {
+      "text": " bed",
+      "ids": [
+        4950
+      ],
+      "pieces": [
+        " bed"
+      ]
+    },
+    {
+      "text": " throne",
+      "ids": [
+        44721
+      ],
+      "pieces": [
+        " throne"
+      ]
     }
   ]
 };

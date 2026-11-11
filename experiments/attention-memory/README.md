@@ -10,7 +10,7 @@ Run from repository root: `npm test` and `npm run experiment`.
 
 This excludes weights, activations, temporary buffers, vision and runtime overhead. Fixed recurrent state does not imply constant total memory, constant processing cost or perfect recall. Full attention does not guarantee exact retrieval.
 
-`illustrate(k)` applies six fixed key/value events to a last-value dictionary. The full log keeps every event; the two-slot dictionary overwrites earlier values. It is deliberately lossy, not the GDN algorithm or model output. There is no quality score.
+`illustrate(k)` applies six fixed events to a two-slot summary (`SLOTS`: who, where). The events retell study 01's sentences one piece at a time: the cat on the mat, the king on the throne, the cat on the bed. The full record keeps every event; the summary overwrites each slot's earlier value. `RECALL` is the question both are asked. It is deliberately lossy, not the GDN algorithm or model output. There is no quality score.
 
 ## Architecture and evidence
 

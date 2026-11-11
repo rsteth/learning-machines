@@ -8,7 +8,12 @@ if version('tiktoken') != '0.14.0':
     raise RuntimeError('Use tiktoken==0.14.0 for this fixture')
 encoding = tiktoken.get_encoding('cl100k_base')
 texts = ['The cat sat on the', ' mat', ' floor', ' sofa', '.',
-         'The cat sat on the mat.', 'unhappiness', 'antidisestablishmentarianism']
+         'The cat sat on the mat.', 'unhappiness', 'antidisestablishmentarianism',
+         ' king', ' slept', ' bed', ' throne']
+# Pieces the teaching model treats as one token each. A piece that splits cannot be used as-is.
+single = [' cat', ' king', ' sat', ' slept', ' on', ' the', ' mat', ' sofa', ' floor', ' bed', ' throne', '.']
+for piece in single:
+    assert len(encoding.encode(piece)) == 1, f'{piece!r} is not a single cl100k_base token'
 examples = []
 for text in texts:
     ids = encoding.encode(text)

@@ -1,6 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {growth, architecture, illustrate, EVENTS} from './mechanics.mjs';
+import {growth, architecture, illustrate, EVENTS, SLOTS, RECALL} from './mechanics.mjs';
 test('growth boundaries and slopes', () => {
  assert.deepEqual(growth(0), {full:0,hybrid:48,recurrent:64});
  assert.deepEqual(growth(1024), {full:64,hybrid:64,recurrent:64});
@@ -15,10 +15,13 @@ test('64 layers distinguish converted and later adapted layers', () => {
 });
 test('toy preserves history and overwrites only the current key', () => {
  assert.deepEqual(illustrate(0),{history:[],state:{}});
- assert.deepEqual(illustrate(3).state,{door:'green',cup:'red'});
- assert.deepEqual(illustrate(6).state,{door:'yellow',cup:'black'});
- assert.equal(illustrate(6).history[0].value,'blue');
+ assert.deepEqual(illustrate(3).state,{who:'king',where:'mat'});
+ assert.deepEqual(illustrate(6).state,{who:'cat',where:'bed'});
+ assert.equal(illustrate(6).history[0].value,'cat');
+ assert.deepEqual([...new Set(EVENTS.map(event=>event.key))],[...SLOTS]);
+ assert.equal(illustrate(6).history.find(event=>event.key===RECALL.key).value,'mat');
+ assert.notEqual(illustrate(4).state[RECALL.key],'mat');
  assert.deepEqual(illustrate(6),illustrate(6));
- const result=illustrate(1);result.history[0].value='changed';assert.equal(EVENTS[0].value,'blue');
+ const result=illustrate(1);result.history[0].value='changed';assert.equal(EVENTS[0].value,'cat');
  for(const n of [-1,7,0.5,NaN]) assert.throws(()=>illustrate(n),RangeError);
 });
