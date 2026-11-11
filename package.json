@@ -5,7 +5,9 @@
   "scripts": {
     "test": "node --test",
     "experiment": "node experiments/attention-memory/run.mjs",
-    "experiment:tokens": "node experiments/tokens/run.mjs"
+    "experiment:tokens": "node experiments/tokens/run.mjs",
+    "experiment:manifolds": "node experiments/manifolds/run.mjs",
+    "fixtures:manifolds": "node experiments/manifolds/generate-fixtures.mjs"
   },
   "license": "MIT"
 }
